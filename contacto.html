@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COPAD</title>
+    <link rel="stylesheet" href="./css/contacto.css">
+        <!--FONT AWESOME-->
+    <script src="https://kit.fontawesome.com/5355502247.js" crossorigin="anonymous"></script>
+    <!-- bootstrap -->
+    <link rel="shortcut icon" type="image/png" href="./IMG/favicon.png"/>
+  </head>
+<body>
+        <!-- header -->
+        <header class="header" id="header">
+            <div class="logo">COPAD</div>
+            <input type="checkbox" id="toggle">
+            <label for="toggle"><img class="menu" src="IMG/menu.svg" alt="menu"></label>
+
+            <nav class="navigation">
+                <ul>
+                    <li><a href="INDEX.HTML">Inicio</a></li>
+                    <li><a href="INDEX.HTML#sobreNosotros">Sobre Nosotros</a></li>
+                    <li><a href="servicios.html">Servicios</a>
+                    </li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="contacto_title">
+            <h1 id="cont_tit"> no dudes en Dejarnos tu consulta</h1>
+        </div>
+
+                  <!-- form -->
+                  <article id="contact">
+                    <div class="content">
+                      <div class="contact_wrapper">
+                        <div class="contact_form">
+                          <form  action="https://formspree.io/f/meqbebkb" method="post" id="form">
+                            <p>
+                              <label>Nombre</label>
+                              <input type="text" name="Nombre" id="fullName">
+                            </p>
+                            <p>
+                              <label>Email</label>
+                              <input type="email" name="email">
+                            </p>
+                            <p>
+                              <label>Telefono</label>
+                              <input type="tel" name="Telefono">
+                            </p>
+                            <p>
+                              <label>Localidad</label>
+                              <input type="text" name="Localidad">
+                            </p>
+                            <p class="block">
+                              <label>Mensaje</label>
+                              <textarea name="Mensaje" rows="3"></textarea>
+                            </p>
+                            <p class="block">
+                              <button type="submit">Enviar</button>
+                            </p>
+                          </form>
+
+                        </div>
+
+                        <div class="contact_info">
+                          <h5>Informacion de Contacto</h5>
+                          <ul>
+                            <li><i class="fa-solid fa-at"></i> companycopad@gmail.com</li>
+                            <li><i class="fa-solid fa-phone"></i> +542984138064</li>
+                          </ul>
+                          <p>
+                            Si tenes alguna consulta o necesitas información adicional acerca de nuestros productos o servicios, no dudes en contactarnos.<br> Nos comunicaremos lo antes posible.<br><br> Muchas gracias por confiar en nosotros.
+                          </p>
+                          <p>
+                            copad.com
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+
+                </article>
+        
+
+      </section>
+
+
+      <!-- footer -->
+      <footer>
+        <div class="footer">
+        <div class="footer_1">
+        <h6>COPAD<span>Co.</span></h6>
+        </div>
+        <div class="footer_2">
+          <ul class="footer_2-menu">
+            <li><a href="INDEX.HTML#sobreNosotros" class="footer_2-link">Sobre Nosotros</a></li>
+            <li><a href="servicios.html" class="footer_2-link">Servicios</a></li>
+            <li><a href="contacto.html" class="footer_2-link">Contacto</a></li>
+          </ul>
+        </div>
+        </div>
+        <div class="footer_copy">
+          <p> COPAD 2023 &copy; todos los derechos reservados</p>
+        </div>
+      </footer>
+
+
+        <script src="./js/contacto.js"></script>
+    
+    </body>
+    </html>

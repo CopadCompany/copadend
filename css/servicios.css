@@ -1,0 +1,102 @@
+@import url(https://fonts.googleapis.com/css2?family=Barrio&family=Bebas+Neue&family=Bungee+Spice&family=Monofett&family=Monoton&family=Nabla&family=Press+Start+2P&family=Roboto:wght@100;300&display=swap);
+.card .transform p,.frase_servicios p{padding:1rem;font-size:1.2rem}
+.footer_1 h6,.logo{letter-spacing:10px}
+.card,.footer_1 h6,.footer_1 p,.footer_copy,.header .navigation ul li ul a,.wrapper{text-align:center}*,::after,::before{margin:0;padding:0;box-sizing:inherit}
+html{scroll-behavior:smooth;overflow-x:hidden}
+body{background:url("../IMG/fondo.jfif") right top/cover fixed;width:100vw;font-family:Roboto,sans-serif}
+.visible{display:block;transition:opacity .5s,max-height .5s,visibility 0s .5s}
+.none{display:none;transition:opacity .5s,max-height 0s .5s,visibility 0s .5s}
+.card,.card .transform p,.transform,.wrapper button{transition:.5s}
+.block{display:block}::-webkit-scrollbar{width:3px}::-webkit-scrollbar-track{background:0 0}::-webkit-scrollbar-thumb{background:gray}::-webkit-scrollbar-thumb:hover{background-color:#000}
+.header{top:0;left:0;right:0;background:rgba(0,0,0,.902);padding:0 10px;display:flex;align-items:center;justify-content:space-between;z-index:1000;height:5vh;position:fixed}
+.logo{font-size:25px;text-transform:uppercase;color:#f5f5f5;font-weight:700;font-family:'Chivo Mono',monospace}
+.navigation ul{list-style:none}.header .navigation ul li{float:left;position:relative;cursor:pointer;margin-top:5px}
+.header .navigation ul li a{font-size:12px;color:#f5f5f5;text-decoration:none;padding:20px;display:block;transition:.2s}
+.header .navigation ul li a:hover{color:#b1b1b1;transition:.2s}
+.header .navigation ul li ul{position:absolute;right:10px;width:300px;background-color:#010101;display:none}
+.header .navigation ul li ul li{width:100%}
+.header .navigation ul li:hover>ul{display:initial}
+#toggle,.header label{display:none;cursor:pointer}
+.menu{width:20px;height:35px}
+.wrapper{display:flex;flex-direction:column;align-items:center;padding:8rem;background-color:rgba(0,0,0,.632);color:#f5f5f5}
+.frase_servicios{margin-bottom:8rem;margin-top:8rem}
+.frase_servicios h1{padding:1rem;margin-bottom:2rem}
+.content-box{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-bottom:10rem}
+.card{width:40vw;height:60vh;padding:1.5rem;background-color:#000;border-radius:15px;display:flex;flex-direction:column;align-items:center;margin-bottom:2rem;justify-content:space-around}
+.footer,.footer_copy{background-color:#000;width:100vw}
+#analisis .visible img{margin-top:35%;width:15%}
+#analisis2 .visible img{margin-top:35%;width:20%}
+#analisis .visible h2,#analisis2 .visible h2{font-size:1.8rem;margin-bottom:3rem}
+.card .transform img{margin-top:3rem;margin-bottom:2rem;width:20%}
+.card .transform .visible h2{font-size:2rem;letter-spacing:5px;margin-bottom:2rem}
+.card .transform button{margin-top:3rem;text-transform:capitalize;background-color:transparent;border:2px solid rgba(245,245,245,.858);transition:.5s}
+.card .transform button a{color:rgba(245,245,245,.886);letter-spacing:5px}
+.wrapper button{margin-top:-4%;margin-bottom:10%;border:none;height:5vh;background:rgba(46,73,153,.8);border-radius:25px}
+.wrapper button:hover{transform:scale(1.1)}
+.wrapper button a{padding:2rem;text-decoration:none;color:#f5f5f5;font-size:1.2rem}
+.footer{height:40vh;display:flex;justify-content:space-around;align-items:center;margin-top:-5%}
+.footer_1 h6{color:rgba(245,245,245,.525);align-items:center;font-size:60px;padding:20px}
+.footer_1 h6 span{font-size:20px;letter-spacing:0}
+.footer_1 p{color:rgba(245,245,245,.672)}
+.footer_2{color:#fff;font-size:15px}
+.footer_2 h4,.footer_copy{color:rgba(245,245,245,.525)}
+.footer_2 h4{font-size:20px}
+footer .footer_2 .footer_2-menu .footer_2-link{text-decoration:none;color:rgba(245,245,245,.525)}
+.footer_copy{align-items:center;height:40px}
+.footer_copy p{margin-top:0;padding:5px;font-size:15px}
+@media screen and (max-width:950px)
+{
+    .header .navigation,.header .navigation ul li ul li{background-color:rgba(1,1,1,.7)}
+    .header label{display:initial}.header{padding:20px 10%}
+    .header .navigation{position:absolute;top:100%;left:0;right:0;display:none}
+    .header .navigation ul li{width:100%}
+    .header .navigation ul li a{padding:0 0 8px 1%}
+    .header .navigation ul li ul{position:relative;width:100%;left:0}
+    #toggle:checked~.navigation{display:block}.card{height:75vh}
+}
+@media screen and (max-width:740px)
+{
+    .wrapper button{margin-top:10%}
+    .content-box{display:flex;flex-direction:column}
+    .card{width:80vw;height:60vh}
+}
+@media screen and (max-width:580px)
+{
+    .frase_servicios h1{font-size:1.5rem}
+}
+@media screen and (max-width:500px)
+{
+    .frase_servicios h1{padding:0;font-size:1.2rem;margin-bottom:0;margin-top:2rem}
+    .card .transform p{font-size:1.1rem}
+    .card .transform button{margin-top:2rem}
+    .card .transform button a{font-size:1rem}
+    .wrapper button{margin-top:20%}
+    .footer{display:flex;flex-direction:column;justify-content:center}
+}
+@media screen and (max-width:421px)
+{
+    .wrapper{padding:1rem;text-align:center}
+    .wrapper button{margin-top:-5%}
+    .frase_servicios h1{margin-top:10rem;font-size:1rem}
+    .card{height:65vh}
+    .card .transform button{margin:0}
+    .wrapper #btn_cont {
+        margin-top: -20%;margin-bottom: 40%;
+    }
+    .footer .footer_1 h6{letter-spacing:5px;font-size: 2rem;}
+    .footer_copy p{font-size: .8rem;}
+}
+@media screen and (max-width:340px)
+{
+    .card .transform p{font-size:1rem}
+    .footer .footer_1 h6{font-size:1.5rem}
+    .wrapper button{margin-top:-25%;margin-bottom:50%}
+}
+@media screen and (max-width:270px)
+{
+    .wrapper #btn_cont a{
+        font-size: .8rem;
+    }
+    .card{height:50vh}
+    .card .transform button a,.card .transform p{font-size:.8rem}
+}

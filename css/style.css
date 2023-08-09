@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100;0,200;0,600;1,100&family=Foldit:wght@800&family=Sono:wght@300&family=Source+Code+Pro:wght@300&display=swap');
+
+
+
+*,
+*::before,
+*::after {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  
+}
+
+body {
+    background: url("../IMG/fondo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+.degrade1 {
+    margin-top: -19%;
+    height: 50vh;
+    width: 100vw;
+    background-image: linear-gradient(transparent, black);
+}
+
+/*scrollbar */
+
+/* Barra de desplazamiento */
+::-webkit-scrollbar {
+    width: 3px;
+  }
+  
+  /* Pista de la barra de desplazamiento */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  /* Agarradera de la barra de desplazamiento */
+  ::-webkit-scrollbar-thumb {
+    background: gray;
+  }
+  
+  /* Estilo al pasar el cursor sobre la barra de desplazamiento */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: black;
+  }
+
+
+
+
+
+/* CSS NAVBAR */
+.header {
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.902);
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    height: 5vh;
+    position: fixed;
+
+}
+
+.logo {
+    font-size: 25px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    color: whitesmoke;
+    font-weight: 700;
+    margin-left: 5%;
+    font-family: 'Chivo Mono', monospace;
+
+}
+
+.navigation ul {
+    list-style: none;
+}
+
+.header .navigation ul li {
+    float:left;
+    position: relative;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.header .navigation ul li a {
+    font-size: 12px;
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    transition: all .2s ease;
+
+}
+
+.header .navigation ul li a:hover {
+   
+    color: rgb(177, 177, 177);
+    transition: .2s;
+
+ 
+
+}
+
+.header .navigation ul li ul {
+    position: absolute;
+    right: 10px;
+    width: 300px;
+    background-color: rgb(1, 1, 1);
+    display: none;
+    
+}
+
+.header .navigation ul li ul a {
+    text-align: center;
+
+}
+
+.header .navigation ul li ul li {
+    width: 100%;
+
+}
+
+.header .navigation ul li:hover > ul {
+    display:initial;
+}
+
+#toggle,
+.header label {
+    display: none;
+    cursor: pointer;
+
+}
+
+.menu {
+    width: 20px;
+    height: 35px;
+
+}
+
+
+
+/* SECTION PRINCIPAL*/
+
+section {
+    color: whitesmoke;
+    margin-top: -10%;
+    margin-right: 1%;
+    text-align: end;
+
+
+}
+section .article_principal {
+    
+    width: 100vw;
+    text-align: right;
+    margin-left: -2%;
+    margin-top: 10%;
+    margin-bottom: 15%;
+
+}
+section .article_principal h2 {
+    font-size: 1000%;
+    text-shadow: 10px 0px 10px rgb(29, 29, 29);
+    
+
+}
+
+section .article_principal p {
+    margin-top: -10px;
+    margin-right: 1%;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    float: right;
+    color: rgba(255, 255, 255, 0.936);
+    padding: 5px;
+    border-radius: 25px 25px;
+    text-shadow: 1px 0px 1px rgb(29, 29, 29);
+    text-transform: uppercase;
+
+}
+
+
+/* Article 1 */
+.container_1 {
+    margin-top: -15rem;
+    width: 100vw;
+    justify-content: space-between;
+    margin-bottom: 20%;
+    height: 75vh;
+    background-image: linear-gradient(transparent, black);
+}
+.container_1 .descripcion h4 {
+    padding: 15%;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 5px;
+    color: rgba(255, 255, 255, 0.639);
+    font-size: 25px;
+    margin-top: -10%;
+  
+}
+
+/*servicios */
+
+.servicios {
+    background: black;
+    margin-top: -10%;
+    margin-bottom: 10%;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.servicios .servicio1 {
+    display: flex;
+    padding: 2rem;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    margin-bottom: 5%;
+
+
+}
+
+.servicios .servicio1 .servicio_desc {
+    
+    text-align: center;
+    padding: 1rem;
+    
+}
+
+.servicios .servicio1 .servicio_desc h3 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.servicios .servicio1 .servicio_desc p {
+    margin-top: -5%;
+    font-size: 1.2rem;
+}
+
+.servicios .servicio1 .servicio_desc .primerP {
+    padding: 4rem;
+    text-align: left;
+    margin-left: 2%;
+}
+
+.servicios .servicio1 .servicio_desc #left_text {
+    padding: 4rem;
+    text-align: right;
+}
+
+
+
+.servicios .servicio1 img {
+    width: 40%;
+    height: 40%;
+}
+
+.servicios .servicio1 #team {
+    width: 35%;
+    height: 35%;
+    margin-bottom: 10rem;
+}
+
+/* degrade */
+
+
+
+
+/* FOOTER */
+
+
+.footer {
+    border-top: 1px rgba(245, 245, 245, 0.253) solid;
+    background-color: transparent;
+    width: 100vw;
+    height: 20vh;
+   display: flex;
+   justify-content: space-around;
+   align-items: center; 
+   position: relative;
+   margin-top: -15%;
+   
+}
+
+.footer_1 a {
+    
+    color: rgba(111, 111, 111, 0.799);
+    text-align: center;
+    align-items: center;
+    font-size: 40px;
+    letter-spacing: 10px;
+    padding: 20px;
+    transition: .5s;
+    font-weight: bold;
+
+}
+
+.footer_1 a:hover {
+    color: rgb(167, 167, 167);
+    cursor: pointer;
+}
+
+.footer_1 a span {
+    font-size: 20px;
+    letter-spacing: 0px;
+}
+
+.footer_1 p {
+    color: rgba(111, 111, 111, 0.799);
+    text-align: center;
+}
+
+
+
+.footer_2 {
+    font-size: 15px;
+}
+
+
+
+footer .footer_2 .footer_2-menu {
+    list-style: none;
+}
+
+
+.footer .footer_2 ul li a {
+    text-decoration: none;
+    padding: 5rem;
+    color: rgba(111, 111, 111, 0.799);
+    transition: .5s;
+
+}
+footer .footer_2 ul li a :hover {
+    cursor: pointer;
+    color: rgba(111, 111, 111, 0.799);
+    transform: scale(1.1);
+}
+
+.footer_copy {
+    background-color: black;
+    text-align: center;
+    align-items: center;
+    height: 50px;
+    margin-top: -20px;
+    width: 100vw;
+   
+}
+
+.footer_copy p {
+    margin-top: 30px;
+    padding: 5px;
+    color: rgba(111, 111, 111, 0.799);
+    font-size: 10px;
+}
+
+
+
+
